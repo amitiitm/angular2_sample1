@@ -1,0 +1,14 @@
+
+<div class="post-container"   
+*ngFor="let Item of mydata | sortBy : 'analystName'" >
+<div class="post-thumb">
+    <a href={{Item.url}}>
+<img src={{fullPath}}{{Item.expertPictureURL}} style="cursor: pointer" alt="No Image"/>
+    </a>
+</div>
+<div class="post-content">
+<h3> {{ Item.analystName }}</h3>
+<p>{{ Item.firmName}}</p>  
+<p>{{Item.goodRecommendations}} / {{Item.totalRecommendations}} successful</p>
+</div>
+</div>
