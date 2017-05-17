@@ -24,7 +24,70 @@
   </head>
 
   <!-- 3. Display the application -->
-  <body>
-    <my-app>Loading...</my-app>
-  </body>
+<body>
+
+    <h1>
+        I Hope You like it as a sample application.
+    </h1>
+
+
+
+    <div id="pre-bootstrap-container">
+        <style type="text/css">
+            #pre-bootstrap {
+                background-color: #262626 ;
+                bottom: 0px ;
+                left: 0px ;
+                opacity: 1.0 ;
+                position: fixed ;
+                right: 0px ;
+                top: 0px ;
+                transition: all linear 300ms ;
+                    -webkit-transition: all linear 300ms ;
+                z-index: 999999 ;
+            }
+            #pre-bootstrap.loaded {
+                opacity: 0.0 ;
+            }
+            #pre-bootstrap div.messaging {
+                color: #FFFFFF ;
+                font-family: monospace ;
+                left: 0px ;
+                margin-top: -37px ;
+                position: absolute ;
+                right: 0px ;
+                text-align: center ;
+                top: 50% ;
+            }
+            #pre-bootstrap h1 {
+                font-size: 26px ;
+                line-height: 35px ;
+                margin: 0px 0px 20px 0px ;
+            }
+            #pre-bootstrap p {
+                font-size: 18px ;
+                line-height: 14px ;
+                margin: 0px 0px 0px 0px ;
+            }
+        </style>
+
+      <my-app>
+        <div id="pre-bootstrap">
+            <div class="messaging">
+
+                <h1>
+                    App is Loading
+                </h1>
+
+                <p>
+                    Please stand by for your ticket to awesome-town!
+                </p>
+
+            </div>
+        </div>
+      </my-app>
+    </div>
+
+</body>
+
 </html>
